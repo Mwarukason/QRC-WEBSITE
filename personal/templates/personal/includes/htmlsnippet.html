@@ -1,0 +1,478 @@
+{% block content %}
+
+  {% load staticfiles %}
+  <!--<link rel="stylesheet" href="{% static 'personal/css/custome.css' %}" type = "text/css"/> -->
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <style media="screen">
+    table{
+      border: 1px solid grey;
+    }
+    h2{
+      float:left;font-size:20px;color: #51A1B7;
+    }
+    .grncol{
+      background-color: #038E3C;
+      color: white;
+    }
+    .wdth30{
+      width: 30px;
+    }
+    .algncenter{
+      text-align: center;
+      vertical-align: middle;
+      line-height: 80px
+    }
+    .headingbody{
+      font-weight: bold;
+      background-color: #666666;
+      vertical-align: middle;
+      color: white;
+    }
+    td{
+      text-align: left;
+      padding: none;
+      margin: none;
+      font-size: 11px;
+    }
+    td > a{
+      vertical-align: top;
+      font-size: 10px;
+      color: #393F48;
+    }
+    td >a:hover{
+      color: #FF0000;
+    }
+    #ab{
+      background-color: #CFE7C3;
+      text-decoration-line: underline;
+
+    }
+    .backgrean{
+      background-color: #CFE7C3;
+    }
+  </style>
+
+  <style>
+        table#table1
+        {
+          width:100%;
+      	  font-family:sans-serif;
+      	  text-align: center;
+          border-color: 1px grey;
+        }
+        table{
+          border-color: grey;
+          border: 1px solid grey;
+          border-collapse: separate;
+        }
+        table.table.table-bordered{
+          border-color: grey;
+          border: 1px solid grey;
+        }
+
+        tr {
+      	  font-size: 11px;
+      	}
+
+
+      @media only screen and (max-width: 1250px) {
+      tr {
+      	font-size: 11px;
+      	}
+      table#table1 {
+          width:100%;
+        }
+      }
+
+      @media only screen and (max-width: 800px) {
+      tr {
+      	font-size: 12px;
+      	}
+      table#table1 {
+          width:100%;
+        }
+      }
+      @media only screen and (max-width: 760px) {
+      tr {
+      	font-size: 12px;
+      	}
+      table#table1 {
+          width:100%;
+        }
+      }
+</style>
+
+  <h2>PUBLIC PROGRAM CALENDAR</h2>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 table-responsive">
+          <table class="table algncenter table-bordered" id="table1">
+          <caption style="font-size: 15px;margin-bottom:-8px;color: #0B539E;font-weight:bold">Public Programs Training Calendar 2017 </caption>
+          <thead>
+            <tr >
+              <th rowspan="2" class="algncenter headingbody" style="width:166px; vertical-align:middle;">PROGRAM</th>
+              <th rowspan="2" class="algncenter headingbody" style="width:63px; vertical-align:middle;">TRAINER</th>
+              <th rowspan="2" class="algncenter headingbody" style="width:40px; vertical-align:middle;">RATE</th>
+              <th rowspan="2" class="algncenter headingbody" style="width:75px; vertical-align:middle;">VENUE</th>
+              <th rowspan="2" class="algncenter headingbody" style="width:110px; vertical-align:middle;">HOTEL</th>
+              <th colspan="6" class="grncol algncenter" contenteditable="true">2017
+                <tr>
+                  <th class="grncol wdth30 algncenter" contenteditable="true">Jul</th>
+                  <th class="grncol wdth30 algncenter" contenteditable="true">Aug</th>
+                  <th class="grncol wdth30 algncenter" contenteditable="true">Sept</th>
+                  <th class="grncol wdth30 algncenter" contenteditable="true">Oct</th>
+                  <th class="grncol wdth30 algncenter" contenteditable="true">Nov</th>
+                  <th class="grncol wdth30 algncenter" contenteditable="true">Dec</th>
+                </tr>
+                <tr>
+                  <th colspan="11" style="background-color: rgb(233, 250, 255);height:20px;color:#56bdd9;font-size:10px;font-weight:bold">DEVELOPING INDIVIDUAL AND TEAM EFFECTIVENESS</th>
+                </tr>
+              </th>
+            </tr>
+          </thead>
+          <tbody >
+            <tr>
+              <td rowspan="4">The 7 Habits of Highly Effective People: Signature Edition 4.0</td>
+              <td >FC Malaysia</td>
+              <td >3,710</td>
+              <td >Kuala Lumpur</td>
+              <td >Ritz Carlton Hotel</td>
+              <td id="ab" class="backgrean"><a href="#">17-19</a></td>
+              <td id="ab" class="backgrean"><a href="#">14-16</a></td>
+              <td id="ab" class="backgrean"><a href="#"></a></td>
+              <td id="ab" class="backgrean"><a href="#">9-11</a></td>
+              <td id="ab" class="backgrean"><a href="#">13-15</a></td>
+              <td id="ab" class="backgrean"><a href="#">11-13</a></td>
+            </tr>
+            <tr>
+              <td >FC Malaysia</td>
+              <td >3,710</td>
+              <td >Selangor</td>
+              <td >The Saujana Hotel</td>
+              <td id="ab" ><a href="#">17-19</a></td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#">11-13</a></td>
+              <td id="ab" ><a href="#">9-11</a></td>
+              <td id="ab" ><a href="#">13-15</a></td>
+              <td id="ab" ><a href="#"></a></td>
+            </tr>
+            <tr>
+              <td >FC Malaysia</td>
+              <td >3,710</td>
+              <td >Penang</td>
+              <td >Evergreen Laurel Penang</td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#">11-13</a></td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#"></a></td>
+            </tr>
+            <tr>
+              <td >FC Malaysia</td>
+              <td >3,710</td>
+              <td >Johor Bahru</td>
+              <td >Puteri Pacific Hotel	</td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#">14-16</a></td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#"></a></td>
+            </tr>
+          </tbody>
+          <tbody class="table-hover">
+            <tr>
+              <td rowspan="3">The 7Habits of Highly Effective People� (Mandarin)</td>
+              <td >FC Malaysia</td>
+              <td >1,908</td>
+              <td >Johor Bahru</td>
+              <td >Puteri Pacific Hotel	</td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#"></a></td>
+            </tr>
+            <tr>
+              <td >FC Malaysia</td>
+              <td >1,908</td>
+              <td >Kuala Lumpur</td>
+              <td >	Solaris Dutamas, Training Centre</td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#">21-23</a></td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#"></a></td>
+            </tr>
+            <tr>
+              <td >FC Malaysia</td>
+              <td >1,908</td>
+              <td >Kuching</td>
+              <td >TBA</td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#"></a></td>
+            </tr>
+          <tbody class="table-hover">
+            <tr>
+              <td >The 7 Habits of Highly Effective Secretary</td>
+              <td >FC Malaysia</td>
+              <td >3,710</td>
+              <td >Kuala Lumpur</td>
+              <td >Ritz Carlton Hotel</td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#"></a></td>
+            </tr>
+          </tbody>
+          <tbody class="table-hover">
+            <tr>
+              <td rowspan="2">The 7 Habits of Highly Effective People� (Refresher)</td>
+              <td >FC Malaysia</td>
+              <td >1,272</td>
+              <td >Kuala Lumpur</td>
+              <td >Ritz Carlton Hotel</td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#"></a></td>
+            </tr>
+            <tr>
+              <td >FC Malaysia</td>
+              <td >1,272</td>
+              <td >Selangor</td>
+              <td >The Saujana Hotel</td>
+              <td id="ab" ><a href="#">24-25</a></td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab"><a href="#"></a></td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#"></a></td>
+            </tr>
+          </tbody>
+          <tbody class="table-hover">
+            <tr>
+              <td rowspan="2">On Being Proactive</td>
+              <td >FC Malaysia</td>
+              <td >901</td>
+              <td >Selangor</td>
+              <td >The Saujana Hotel</td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#"></a></td>
+            </tr>
+            <tr>
+              <td >FC Malaysia</td>
+              <td >901</td>
+              <td >	Johor Bahru</td>
+              <td >	Puteri Pacific Hotel</td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#"></a></td>
+            </tr>
+          </tbody>
+          <tbody class="table-hover">
+            <tr>
+              <td >7 Tabiat Orang Yang Amat Berkesan�</td>
+              <td >FC Malaysia</td>
+              <td >2,438</td>
+              <td >Selangor</td>
+              <td >The Saujana Hotel</td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#"></a></td>
+            </tr>
+          </tbody>
+          <tbody class="table-hover">
+            <tr>
+              <td >Crucial Conversations� by VitalSmarts</td>
+              <td >VS Malaysia</td>
+              <td >2,385</td>
+              <td >Kuala Lumpur</td>
+              <td >Ritz Carlton Hotel</td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#"></a></td>
+            </tr>
+          </tbody>
+          <tbody class="table-hover">
+            <tr>
+              <td >The 5 Choices - To Extraordinary Productivity</td>
+              <td >FC Malaysia</td>
+              <td >2,417</td>
+              <td >Selangor</td>
+              <td >The Saujana Hotel</td>
+              <td id="ab" ><a href="#">21-22</a></td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#"></a></td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <th colspan="11" style="background-color: rgb(233, 250, 255);height:20px;color:#56bdd9;font-size:10px;font-weight:bold">DEVELOPING GREAT LEADERS AND ORGANIZATIONAL EFFECTIVENESS</th>
+            </tr>
+          </tbody>
+          <tbody class="table-hover">
+            <tr>
+              <td rowspan="4">Leadership - Great Leaders, Great Teams, Great Results�</td>
+              <td >FC U.S.</td>
+              <td >5,035</td>
+              <td >Kuala Lumpur</td>
+              <td >Ritz Carlton Hotel</td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#">11-13</a></td>
+            </tr>
+            <tr>
+              <td >FC Malaysia</td>
+              <td >3,074</td>
+              <td >Kuala Lumpur</td>
+              <td >Ritz Carlton Hotel</td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#">23-25</a></td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#"></a></td>
+            </tr>
+            <tr>
+              <td >FC Malaysia</td>
+              <td >3,074</td>
+              <td >Selangor</td>
+              <td >The Saujana Hotel</td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#">21-23</a></td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#"></a></td>
+            </tr>
+            <tr>
+              <td >FC Malaysia</td>
+              <td >3,074</td>
+              <td >Penang</td>
+              <td >Evergreen Laurel Penang</td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#"></a></td>
+            </tr>
+          </tbody>
+          <tbody class="table-hover">
+            <tr>
+              <td >Leading At The Speed Of Trust</td>
+              <td >FC Malaysia</td>
+              <td >	2,544</td>
+              <td >Selangor</td>
+              <td >The Saujana Hotel</td>
+              <td id="ab" ><a href="#">17-18</a></td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#">6-7</a></td>
+              <td id="ab" ><a href="#"></a></td>
+            </tr>
+          </tbody>
+          <tbody class="table-hover">
+            <tr>
+              <td >Influencer� by VitalSmarts</td>
+              <td >VS Malaysia</td>
+              <td >2,385</td>
+              <td >Kuala Lumpur</td>
+              <td >Ritz Carlton Hotel</td>
+              <td id="ab" ><a href="#">24-25</a></td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#">20-21</a></td>
+              <td id="ab" ><a href="#"></a></td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <th colspan="11" style="background-color: rgb(233, 250, 255);height:20px;color:#56bdd9;font-size:10px;font-weight:bold">DEVELOPING HIGH SALES PERFORMANCE & CULTURE OF EXECUTION</th>
+            </tr>
+          </tbody>
+          <tbody class="table-hover">
+            <tr>
+              <td rowspan="2">4 Disciplines of Execution</td>
+              <td >FC Malaysia</td>
+              <td >2,544</td>
+              <td >	Kuala Lumpur</td>
+              <td >Ritz Carlton Hotel</td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#">25-26</a></td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#"></a></td>
+            </tr>
+            <tr>
+              <td >FC Malaysia</td>
+              <td >2,544</td>
+              <td >Selangor</td>
+              <td >The Saujana Hotel</td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#"></a></td>
+            </tr>
+          </tbody>
+          <tbody class="table-hover">
+            <tr>
+              <td >Helping Client Succeed�</td>
+              <td >FC Malaysia</td>
+              <td >3,886</td>
+              <td >Kuala Lumpur</td>
+              <td >Ritz Carlton Hotel</td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#">7-9</a></td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#"></a></td>
+              <td id="ab" ><a href="#"></a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+{% endblock %}

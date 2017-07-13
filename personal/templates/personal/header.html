@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Django Personal Website</title>
+    <meta charset="utf-8" />
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'personal/css/bootstrap.min.css' %}" type = "text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="{% static 'personal/js/bootstrap.min.js' %}" type="text/javascript">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    </script>
+    <meta name="viewport" content = "width=device-width, initial-scale=1.0">
+    <style type="text/css">
+      html,
+      body {
+        height:100%;
+      }
+      .headtop{
+        font-size:15px;
+        color:maroon;
+        font-weight:bold;
+        text-align:center;
+        padding:10px
+      }
+    </style>
+  </head>
+
+  <body class="body" style="background-color:#f6f6f6">
+	<div class="container" style="min-height:100%; width:72%">
+    <div class="navbar-wrapper" style="padding-top:10px;">
+
+       <nav class="navbar navbar-inverse navbar-static-top">
+         <div class="container">
+           <div class="navbar-header">
+             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+               <span class="sr-only">Toggle navigation</span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+             </button>
+             <img src="{% static 'personal/images/egg.jpg' %}" class="navbar-brand" style='max-height:100px;' alt="face">
+           </div>
+           <div id="navbar" class="navbar-collapse collapse t navbar-center">
+             <ul class="nav navbar-nav">
+               <li><a href="/contact/">CONTACT</a></li>
+               <li><a href="/blog/">BLOG</a></li>
+               <li class="active"><a href="/">HOME CARENDAR</a></li>
+             </ul>
+           </div>
+         </div>
+
+       </nav>
+   </div><hr>
+   <div class="headtop">
+     With the implementation of Goods and Services Tax (GST), all current published rates advertised or printed are inclusive of GST. (Ref. LRM GST Registration No CBP : 001788592128)
+   </div>
+   <div class="">
+     <img src="{% static 'personal/images/calendar_banner.jpg' %}" alt="" style="width:100%;height:214px;">
+   </div>
+		<div class="row" >
+		  <div class="col-m-12">
+			<div class='container' style="width:100%;">
+			   {% block content %}
+
+			   {% endblock %}
+			</div>
+		  </div>
+		</div>
+	</div>
+
+	<footer>
+		<div class="container">
+			<p><a href="/contact/">Contact</a> | <a href="#" target="blank" class="fa fa-facebook"></a>|<a href="#" class="fa fa-twitter" target="blank"> | <a href="#" target="blank">Google+</a> | <a href="#" class="fa fa-youtube"></a> | <a href="#" class="fa fa-linkedin"></a></p>
+		</div>
+	</footer>
+
+  </body>
+</html>
