@@ -1,16 +1,15 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <h1>{{title}} Template is working</h1>
+{% extends "base.html" %}
 
-      {{instance.title}}<br>
-      {{instance.body}}<br>
-      {{instance.timestamp}}<br>
-      {{instance.updated}}<br>
-      {{instance.id}}<br>
-  </body>
-</html>
+{% block head_title %} {{ instance.title }} | {{ block.super }} {% endblock head_title %}
+
+{% block content %}
+  <div class="col-sm-6 col-sm-offset-3">
+    {% if instance.image %}
+      <img src="{{ instance.image.url }}" class="img-responsive" alt="image">
+    {% endif %}
+    <h1>Post: {{instance.title}}<br> <small>Created on: {{instance.timestamp}} ago<br></small></h1>
+
+    {{ instance.body | linebreaks }}<br>
+  </div>
+
+{% endblock %}
